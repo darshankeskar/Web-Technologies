@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+     body{
+        background-color: antiquewhite;
+    }
+    #child{
+        background-color: rgb(102, 109, 109);
+        height: 800px;
+        width: 400px;
+        border: 2px double black;
+        /* t=0 r b=0 l */
+        margin: 0 auto; 
+        margin-top:100px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+    }
+    #child1{
+        border: 2px dashed black;
+        height: 350px;
+        margin: 0  auto;
+        width: 350px;
+        margin-top: 26px;
+        border-radius: 50%;
+        background-color:rgb(29, 28, 31);
+    }
+    #child2{
+        border: 2px dashed black;
+        height: 350px;
+        width: 400px;
+        margin-top: 26px;
+        /* short hand property of border  */
+        /* TOP RIGHT BOTTOM LEFT */
+        border: 100px 200px 100px 50px ;
+    }
+    li{
+        line-height: 50px;
+        font-weight: bold;
+        font-size: large;
+        
+
+    }
+    </style>
+</head>
+<body>
+    <div id="child">
+        <div id="child1"></div>
+        <div id="child2">
+            <ul>
+                <li>
+                   <form action="">
+                    <label for="Name">Name</label>
+                    <br>
+                    <label for="Email">Email</label>
+                    <br>
+                    <label for="contact no">Contact  no</label>
+                    <br>
+                   </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

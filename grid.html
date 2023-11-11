@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid columns</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+            /* display: grid; */
+            grid-template-areas: 'b1 b1  b2 b2 b3 b3 ' 
+            'b1 b1  b4 b4 b4 b3 b3 '
+            'b5 b5 b5 b5 b5 ' 
+            'b6 b6 b7 b7 b7 b8 b8';
+            border: 2px solid;
+            display: grid;
+            gap: 10px;
+        }
+        .block{
+            display: grid;
+            border: 2px solid ;
+        }
+        #block{
+            background-color: aquamarine;
+        }
+        #block1{
+               grid-area: b1;
+        }
+        #block2{
+               grid-area: b2;
+        }
+        #block3{
+               grid-area: b3;
+        }
+        #block4{
+               grid-area: b4;
+        }
+        #block5{
+               grid-area: b5;
+        }
+        #block6{
+               grid-area: b6;
+        }
+        #block7{
+               grid-area: b7;
+        }
+        #block8{
+               grid-area: b8;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.parent#block1*8  -->
+    <div class="parent">
+
+        <div class="block" id="block1">block1</div>
+        <div class="block" id="block2">block2</div>
+        <div class="block" id="block3">block3</div>
+        <div class="block" id="block4">block4</div>
+        <div class="block" id="block5">block5</div>
+        <div class="block" id="block6">block6</div>
+        <div class="block" id="block7">block7</div>
+        <div class="block" id="block8">block8</div>
+        
+    </div>
+</body>
+</html>

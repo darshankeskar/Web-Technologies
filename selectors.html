@@ -1,0 +1,132 @@
+<!-- chilid selector - (>) parent Element >child selector {KEy :value} -->
+<!-- Adjecnt sibling  selector - (+) Elder brother+ Young brother  {KEy :value} -->
+<!-- Decedent  selector - (space) Super parent Element  child element   {KEy :value} -->
+<!-- General sibling selector - #king .king , (~) Tilt Symbol-->
+<!-- Grouping selector - (space) -->
+
+
+
+
+<!-- vw-  viewport width (takes browser width fit to the browser width) -->
+<!-- vh-  viewport height (takes browser height fit to the browser height43)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child selector</title>
+    <style>
+        /* child selector (>) parent child >child Element {key :value } */
+        div>p{
+            background-color: antiquewhite;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div>section>p{
+              color: aqua;
+              background-color: azure;
+        }
+ 
+        /* adjcent selector */
+        h2+h3{
+            background-color: blue;
+            color: yellow;
+            font-family:'Courier New', Courier, monospace;
+        }
+        h5+h6{
+            color: blueviolet;
+        }
+
+        h1+div{
+            color: violet;
+            border: 5px dotted black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #head+span{
+
+            color: tomato;
+            background-color: violet;
+            border: 1px dashed red;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #box1+#box2{
+            color: steelblue;
+            background-color: aliceblue;
+        }
+        #para1>#para2{
+            color: tan;
+            border: 2px thick gray;
+        }
+        /* Decedent selector(space) */
+        #royal h1{        
+            border: 2px solid brown;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifd;
+            color: turquoise;
+            text-align: center;
+        }
+        #king.king{
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selector</h1>
+    <div id="parent">
+    <p>PARA 1 BETA OF DIV PARA</p>
+    <p>PARA 2 BETA OF DIV PARA</p>
+    <section>
+        <p>PARA BETA OF SECTION PARA.</p>
+    </section>
+    <p>PARA FROM ANOTHER MOTHER.</p>
+    </div>
+
+
+<!-- NOTE: if id and class is not available in program  to targect specific element then the priority goes to element selector -->
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+    <h1>Adjecent  sibling  selector</h1>
+    <h1>HEADING 1</h1>
+    <h2>adjecent brother of H1</h2>
+    <h3>adjecnt brother of H2</h3>
+    <h4>adjecent  brother of H3</h4>
+    <h5>adjcent brother of H4</h5>
+    <h6>adjcent brother of H5</h6>
+    <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+    <div>
+        <h1>HEADING OF DIV</h1>
+    </div>
+
+    <p>Adjecent sibling of DIV</p>
+    <h1>adjecent sibling of p</h1>
+    <div>
+        Adjecent sibling of H1
+    </div>
+    <div id="head">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Voluptatibus culpa repellat quaerat at voluptas natus quo,</span> exercitationem iste laudantium non quam cumque necessitatibus.
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div id="box1">
+        <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sapiente distinctio voluptate.</p>
+    </div>
+
+    <div id="box2">
+        <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt sapiente porro quas nemo.</p>
+    </div>
+
+    <div id="royal">
+        <h1>GGF</h1>
+        <h1>GF</h1>
+        <h1>F</h1>
+        <h1>S</h1>
+        <h1>GS</h1>
+        <h1>GGS</h1>
+    </div>
+    <h1>outside member of family</h1>
+    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+      <div id="king"> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum placeat libero quibusdam fugit dolor quis totam? <span class="king">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ducimus ab explicabo impedit ad facilis nulla cupiditate, cumque quas similique ipsam eligendi veritatis tempora, harum iste dolor omnis veniam maiores.</span> Quidem voluptatibus molestiae facilis maiores, magnam animi enim quibusdam sunt quasi nihil? Ullam optio deleniti iure cupiditate nesciunt. Nemo, maiores! Laudantium vel commodi, rerum est iusto ipsa quo.
+      </div>
+</body>
+</html>

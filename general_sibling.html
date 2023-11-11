@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General sibling</title>
+    <style>
+        div~p{
+            background-color: aqua;
+            color: brown;
+        }
+        div~.gs{
+             background-color: blueviolet;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h3,h4,h2{
+            color: red;
+            background-color: aqua;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        div h4{
+            color: yellow;
+            background-color:aliceblue;
+            border: 10px thick saddlebrown;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>general sibling</h1>
+    <div>
+         <p>PARA 1</p>
+    </div>
+    <p class="gs">General Sibling 1</p>
+    <h1 class="gs">General sibling 2</h1>
+    <p class="gs">General sibling 3</p>
+
+    <div>General sibling 4
+        <h4>jijojo</h4>
+    </div>
+    <h3>jijojo</h3>
+    <h2>ijuoi</h2>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age voting validation</title>
+</head>
+<body>
+    <script>
+        // let age=[23,4,56,56,89,12,55]
+        // // document.getElementById("print").innerHTML=age.filter(getAge)
+        // document.getElementById("print").innerHTML=age.map(getAge)
+        // function getAge(cAge){
+        //     return cage>=18;
+        // }
+
+
+        // the map() and filter() function
+        //arrow function -
+        ()=>{}
+        // IIFE
+        (()=>{})()
+        //named function
+        function demo(){}
+        // high order function
+        function fun_one(){
+            return fun_two
+        }
+        function fun_two(){
+            return "Hello"
+        }
+        console.log(fun_one()())
+
+        // function as expression 
+        let x= function fun_one(){}
+
+        //constructor function
+        let obj=new Object();
+        function func_one(age,name){
+            this.age=age,
+            this.name=name
+        }
+        
+        let obj1=new fun_one(10,20)
+
+        // spread opearator
+        let arr1=[12,23,45]
+        let arr2=[...arr1]
+        console.log(arr2)
+        console.log(arr1)
+
+        //rest operator
+        let sir=((arg1,...arg2)=>{
+            return arg1,arg2;
+        })
+
+        console.log(sir(12,56,45,78,98,))
+
+    </script>
+    
+</body>
+</html>

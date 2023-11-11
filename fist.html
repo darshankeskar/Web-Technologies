@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        there are 5 datatypes in the javascript.
+        1.number
+        2.string
+        3.boolean
+        4.null
+        5.undefined
+
+        note that:var and let both are identifiers
+        note: var is used in freely mode in javascript due to this reason the var scope is global, no security , we can reinitialize and we can redeclare also
+        note: let is used in Strict mode in javascript due to this reason the let scope is local {block scope }, HIgh security ,
+
+    </p>
+    <script>
+
+        // undefined
+        var a;
+        console.log(typeof a);
+        // number datatype
+        a=10;
+        console.log(typeof a);
+        // string datatype
+        var str="str1";
+        var str='s';
+        console.log(typeof str);
+        // bool
+        var bool=true;
+        console.log(typeof bool);
+        // null
+        var nl=null;
+        console.log(typeof n1);
+        n1="this is a string brother"
+        console.log(typeof n1);
+
+        
+
+
+
+        // hoisting
+        // intializing the value to the variable before the declarations
+        var vaiable;
+        console.log("start");
+
+        // vae a; declaration is possible in terms of var vatiable 
+        console.log(a)
+        // a=20; initialization is possible in terms of vae variable
+        console.log(a);
+
+        // var a=30; redeclartion is possibl in terms of var variable
+        console.log(a);
+        // a="reinitialization"; reinitializaion is possible in terms of var variable
+        cosole.log(a);
+
+        // variable Hoisting - we can initialize the variable before its Declaration
+        // is called variable Hoisiting
+        // its possible in var variable
+        // The var variable is the global scope in the javascript.
+
+
+
+
+           console.log("start")
+        //    declaration is possible in terms of let variable
+
+        let declaration;
+        console.log(declaration);
+
+        // let declarations;//redeclaration is not possible in terms of let variable
+        // console.log(declaration);
+
+        declaration="reinitialization is possible"//reinitialization is possible in terms of let variable
+        cosole.log(declaration)
+
+        // block scope variable: if we declare let variable inside thel let block 
+        // we can access this variable outside this block is called as block
+        // scope variable
+        // if(true){
+            let block ="block scope"
+        // }
+        console.log(blk);
+
+
+    </script>
+
+</body>
+</html>

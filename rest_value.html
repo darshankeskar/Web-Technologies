@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //it is rest parameter example
+        // (...var_name) syantax for a rest parameter
+        function restValue(p1,p2,p3,...team){
+            console.log(...team);
+            for(const player of team){
+                console.log(player[0].toUpperCase());
+            }
+        }
+        restValue("Sachin","Dravid","ganguly","sehwag","laxmnam","virat");
+        let str="str"
+        console.log(typeof str)
+    </script>
+</body>
+</html>

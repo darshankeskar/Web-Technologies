@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="car" onchange="getChange()">
+        <option  value="volvo">volvo</option>
+        <option  value="tata">tata</option>
+        <option value="kia">kia</option>
+        <option  value="maruti suzuki">maruti suzuki</option>
+    </select>
+    <p id="print"></p>
+    <script>
+        let vehicle=document.getElementById("car")
+        let printv=document.getElementById("print")
+        function getChange(){
+            printv.innerHTML="Congrats !! Buddy this is your selected car "+vehicle.value
+            printv.style.color="red"
+        }
+
+    </script>
+</body>
+</html>

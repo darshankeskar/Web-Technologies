@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text clipping</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 600px;
+            background-color: aqua;
+            border: 15px dotted red;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 40px;
+        
+        }
+        .box1{
+            background-clip: padding-box;
+            padding:10px;
+        }
+        .box2{
+            background-clip: content-box;
+            padding: 20px;
+        }
+        .box3{
+            background-clip: border-box;
+            padding: 25px;
+        }
+        h1{
+            font-size: 10 em;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(red,yellow,green);
+            background-image: url(./CSS/images/toy_story_4_5k_2019-2560x1440.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>FOREGROUND TEXT</h1>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box -Shadow</title>
+    <style>
+        div{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(160, 149, 149);
+            border: 2px solid rgb(243, 201, 201);
+            margin: 0 auto;
+            /* box shadow : x     y   opacity  z     */
+            /* box-shadow: 100px 0px 15px 0px ; */
+            /* for multiple properties inside one box shadoow property */
+            box-shadow: 2px 2px 3px lavender,3px 4px 5px yellow,2px 1px 4px wheat;
+            /* box-shadow: 100px 0px 15px 0px ; */
+        }
+        p{
+            text-shadow: 1px 2px 3px grey,3px 4px 5px red,2px 1px 4px rebeccapurple;
+            color: blanchedalmond;
+            text-align: center;
+            font-size: large;
+
+        }
+        #para{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(141, 133, 133);
+            border: 2px solid black;
+            border-radius: 10px ;
+            margin: auto;
+
+        }
+        a{
+            text-align: center;
+            margin: auto;
+            padding: 20px 20px ;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>Hello Darshan!!!</p>
+    <p id="para">
+    <a href="https://www.google.com">Submit</a>
+    </p>
+</body>
+</html>

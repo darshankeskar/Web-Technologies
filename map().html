@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Function</title>
+</head>
+<body>
+    <script>
+        let fname=["jay","ajay","vijay","sanjay","Digvijay","Dhanjay"]
+        console.log(fname);
+        let fullname=fname.map((cvalue)=>{
+            return cvalue+"Keskar";
+        }).map((element,index)=>{
+            return element*1000
+        })
+        console.log(fullname);
+
+
+        // filter()
+        let ar=[10,20,30,40]
+        console.log(ar.filter((element,index)=>{
+            return math.sqrt(elme)
+        }))
+
+        let num=[10,20,30,40,50]
+        conosole.log(num);
+        let square=num.map((cnum)=>{
+              return math.pow(cnum,2)
+        })
+        console.log(square);
+
+        let num1=[10,20,30,40,50]
+        conosole.log(num1);
+        let square1=num.map((cnum)=>{
+            //   return math.pow(cnum,2)
+            //   return math.max(cnum)
+              return math.sqrt(cnum)
+
+              if(cnum>20){
+                return cnum;
+              }
+        })
+        console.log(square1);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String object</title>
+</head>
+<body>
+    
+    <script>
+        //by using double quotes
+        let str="hello"
+        console.log(typeof str);
+
+        //by using single quotes
+        let str1='bye'
+        console.log(typeof str1);
+
+        //By using backtick
+        let str2=`backtick string`
+        console.log(typeof str2);
+
+        console.log(" 'Hello ' ")
+        console.log(`'Bye ' `)
+
+        let obj={
+            name:'darshan',
+            age:24
+        }
+        cosole.log("name is:"+obj.name);
+        cosole.log("name is:"+obj.age);
+
+
+
+        //String is immutable in nature we can not modify string 
+
+        let bike="Deluxe"
+        bike="wego" //replacement is possible
+        document.write(bike);
+
+        bike[0]="splendor" //modification of string is not possible 
+        //console.log(bike)
+        document.write(bike);
+
+
+        //string  by using new keyword
+        let string =new String("hello")
+        console.log(typeof string);
+        console.log(string);
+
+
+        // String length
+        let stringdta="dadaaBHAI NAUROJi"
+        console.log(stringdta.length)
+        console.log(stringdta.toUpperCase()); // it is used to convert Uppcase string
+        console.log(stringdta.toLowerCase()); //it is used to convert lowercase string
+
+        console.log(stringdta.charAt(0));
+        console.log(stringdta.charAt(1));
+        console.log(stringdta.charAt(-1));
+        console.log(stringdta.charCodeAt(0)) //returns a ascii value 
+
+        let replace="pune to goa"
+        console.log(replace.replace("goa","mumbai"));
+
+        //repeat()
+        let repeat="india to usa "
+        console.log(repeat.repeat(5));
+        //includes ():it is used to check the sp character is 
+        //if yes it will return us true or else false
+
+        let inc="includes"
+        console.log(inc.includes("i"))
+
+        //indexof()= it is used indexOf() of sp charater of a given string
+        let index="index";
+        console.log(index.indexOf("n"))
+
+        //startWith():it is used to check whether this string starts with specified index or not
+        let start="startswith"
+        console.log(start.startsWith("h"))
+
+        //then it will returns us true or else false.
+        let end="endswith"
+        console.log(end.endsWith("j"))
+        
+        //slice("start index","last index"):it is used to turn 
+        let slice="javascript"
+        console.log(slice.slice(1,4))
+        console.log(slice.slice(-4))
+
+        //substr()= substring
+        let sbt="subSring"
+        console.log(sbt.substring(1,5));
+
+        //trim(
+        let trim="banana"
+        console.log(trim.trim());
+
+        //trimStart()
+        let trimstart=" trimstart"
+        console.log(trimstart)
+        console.log(trimstart.trimStart())
+
+        //trimEnd()
+        let trimend="trimEnd   "
+        console.log(trimend);
+        console.log(trimend.trimEnd());
+
+        //replaceAll()
+        let replaceAll="replace"
+        console.log(replaceAll);
+        console.log(replaceAll.replaceAll(" ",""));
+
+
+
+
+    </script>
+</body>
+</html>

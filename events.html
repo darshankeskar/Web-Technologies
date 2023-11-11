@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bulb{
+            height: 240px;
+            width: 240px;
+            border: 2px solid rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div id="bulb"></div>
+    <button onclick="geton()">ON</button>
+    <button onclick="getoff()">OFF</button>
+    <script>
+        let ele=document.getElementById("bulb")
+        function geton(){
+            ele.style.backgroundColor="red"
+        }
+        function getoff(){
+            ele.style.backgroundColor="black"
+        }
+
+    </script>
+</body>
+</html>

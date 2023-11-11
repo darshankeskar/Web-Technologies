@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: aqua;
+            font-size: medium;
+        }
+        /* nav{
+            background-color: brown;
+        }
+        nav ul li {
+            display: inline block;
+            align-items: center;
+        }
+        main{
+            border: 2px solid red;
+            color: black;
+            height: 500px;
+        }
+        footer{
+            width: 100%;
+            background-color: blueviolet;
+            color: white;
+            height: 400px;
+        } */
+        .parent{
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-areas: 'header header header ''menu main right ''footer footer22 footer';
+            gap: 10px;
+            padding: 10px;
+
+
+        }
+        .child{
+            border: 2px solid red;
+            text-align: center;
+            background-color: burlywood;
+        }
+        div>.child:nth-child(1){
+            grid-area: header;
+        }
+        div>.child:nth-child(2){
+            grid-area: main;
+        }
+        div>.child:nth-child(3){
+            grid-area: menu ;
+        }
+        div>.child:nth-child(4){
+            grid-area: section;
+        }
+        div>.child:nth-child(5){
+            grid-area: footer;
+        }
+
+        @media screen and (min-width:610px)and(max-width:1000px){
+            .parent{
+                height: 450px;
+                width: 200px;
+                font-size: large;
+                border: 4px dotted red;
+                background-color: antiquewhite;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- /* div,parent#child*5  */ -->
+    <!-- /* <nav>
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact us</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nemo molestias atque eius. Nulla dicta ad debitis illo error velit aliquam suscipit quaerat adipisci nesciunt ipsum, minus doloremque dolore cupiditate!</p>
+        </section>
+    </main>
+    <footer>
+        <p>this is  footer @2023</p>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact us</a></li>
+        </ul>
+    </footer> */ -->
+    <div class="parent">
+        <div class="child" id="child1">header</div>
+        <div class="child" id="child2">main</div>
+        <div class="child" id="child3">menu</div>
+        <div class="child" id="child4">section</div>
+        <div class="child" id="child5">footer</div>
+    </div>
+</body>
+</html>

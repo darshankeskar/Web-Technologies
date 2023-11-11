@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in page</title>
+</head>
+<body>
+    <form action="" onsubmit="getSubmit()">
+      <label for="First name">First name</label>
+      <input type="text" name="fname" id="fname" oncopy="getCopy()" oncut="getCut()" onpaste="getPaste()">
+      <br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email"  oncopy="getCopy()" oncut="getCut()" onpaste="getPaste()">
+      <br>
+      <input type="submit" value="Submit" id="submit" onmouseover="OnMouseOver()">
+    </form>
+    <script>
+        let ele1=document.getElementById("fname")
+        let ele2=document.getElementById("email")
+        let ele3=document.getElementById("submit")
+
+        function getSubmit(){
+            if (ele1.value =="darshan" || ele2.value == "darshankeskar900@gmail.com") {
+                alert("Your form is Successfully Submited")
+            }
+            else{
+                alert("Invalid Input Crdentials !! Enter again!!")
+            }
+        }
+        function getCopy(){
+            alert("YOUR TEXT IS SUCCESSFULLY COPIED !!!")
+        }
+        function getCut(){
+            alert("YOUR TEXT IS SUCCESSFULLY Cut pasted !!!")
+        }
+        function getPaste(){
+            alert("YOUR TEXT IS SUCCESSFULLY Pasted. !!!")
+        }
+        function onSubmit(){
+            alert("YOUR TEXT IS SUCCESSFULLY submitted. !!!")
+        }
+        function OnMouseOver(){
+            document.style.Backgroundcolor="black";
+            document.style.borderradius="4px";
+            document.style.cursor="pointer";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border box</title>
+    <style>
+        body{
+            text-align: center;
+            color: red ;
+            line-height: 300px;
+        }
+
+      #parent{
+        height: 300px;
+        width: 300px;
+        border: 2px solid ;
+        margin: 0 auto;
+        /* by default box sizing is content box */
+        box-sizing: border-box;
+        text-align: center;
+
+    }
+    #altBox{
+        height: 300px;
+        width: 300px;
+        border: 3px solid red;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+     
+    </style>
+</head>
+<body>
+    
+    <div id="parent">
+        <h2>Standred -Box </h2>
+        <!-- here bl - border left  and br is border right -->
+        <p>Width :bl+actual width+br</p>
+        <!-- here bt is border top and bb is border bottom -->
+        <p>height :bt+actual hight+bb</p>
+    </div>
+    <div id="altBox">
+        <h2>Alternative -Box </h2>
+        <p>Width :bl+actual width+br</p>
+        <p>height :bt+actual hight+bb</p>
+    </div>
+</body>
+</html>

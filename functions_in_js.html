@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // async &await
+        // let promise=new Promise((resolve,reject)=>{
+        //     // resolve("This is resolved")
+        //     reject("This is rejected")
+        // })
+
+        // async function get_promise(){
+        //     let prom=await promise
+        //     console.log(prom);
+        // }
+        // get_promise()
+
+
+
+        //then and catch
+        // let promise=new Promise((resolve,reject)=>{
+        //     resolve("This is resolved")
+        // })
+
+        // promise.then((resolve)=>{
+        //       console.log("this is resolved");
+        //     }).catch((reject)=>{
+        //         console.log("this is resolve");
+        //  })
+
+
+         //callback function
+
+         function fun_one(arg1){
+            return arg1()
+         }
+         function fun_two(){
+            console.log( "hello")
+         }
+         fun_one(fun_two)
+    </script>
+</body>
+</html>

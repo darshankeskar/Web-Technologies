@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conical Gradient</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .cone{
+            height: 400px;
+            width: 400px;
+            border: 2px solid;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #cone1{
+            background-image:conic-gradient(red 0deg 90deg,blue 90deg 180deg,yellow 180deg 270deg,green 270deg 360deg);
+        }
+        #cone2{
+            background-image:conic-gradient(red 0deg 45deg,blue 45deg 90deg,yellow 90deg 135deg,cyan 135deg 180deg,hotpink 180deg 225deg,crimson 225deg 270deg ,orange 270deg 315deg, black  315deg 360deg);
+        }
+        #cone3{
+            background-image:conic-gradient(red 0deg 36deg,blue 36deg 72deg,yellow 72deg 108deg,cyan 108deg 144deg,hotpink 144deg 180deg,crimson 180deg 216deg ,orange 216deg 252deg, black  252deg 288deg,pink 288deg 324deg,cyan 324deg 360deg);
+        }
+        #cone7{
+            background-image:conic-gradient(red 0deg 10deg,)
+        }
+        .newcone{
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            border: 2px solid;
+            margin-top: 20px;
+        }
+        #cone4{
+            background-image: conic-gradient(red  0deg 45deg,white 45deg 135deg,yellow 135deg 225deg,green 225deg 315deg,red 315deg 360deg);
+        }
+        #cone5{
+            background-image: conic-gradient(red  0deg 45deg,white 45deg 135deg,white 135deg 225deg,green 225deg 315deg,red 315deg 360deg);
+        }
+        #cone6{
+            background-image: conic-gradient(blue 45deg 135deg,blue 135deg 225deg,yellow 225deg 315deg,red 315deg 360deg);
+        }
+        #cone8{
+            background-image: conic-gradient(rgb(247, 13, 13) 0deg 45deg,white 45deg 135deg,white 135deg 225deg,white 225deg 315deg,red 315deg 360deg);
+
+        }
+        #cone9{
+            background-image: repeating-conic-gradient(red 10deg ,yellow 20deg);
+        }
+        #cone10{
+            background-image: repeating-conic-gradient(red 0deg 10deg,yellow 10deg 20deg,blue 20deg 30deg,crimson 30deg 50deg ,);
+        }
+        #cone7{
+            background-image: repeating-conic-gradient(red 10deg ,yellow 20deg);
+        }
+    </style>
+</head>
+<body bgcolor="white">
+    <div class="cone" id="cone1"></div>
+    <div class="cone" id="cone2"></div>
+    <div class="cone" id="cone3"></div>
+    <div class="cone" id="cone7"></div>
+    <div class="cone" id="cone9"></div>
+    <div class="cone" id="cone10"></div>
+    <div class="newcone" id="cone4"></div>
+    <div class="newcone" id="cone5"></div>
+    <div class="newcone" id="cone6"></div>
+    <div class="newcone" id="cone8"></div>
+    
+</body>
+</html>

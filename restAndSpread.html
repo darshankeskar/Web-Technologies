@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        <!-- copying a array without usnig opearator. -->
+        // let color=["red","Green"] 
+        console.log(color);
+        // let colorCopy=color;
+        console.log(colorCopy);
+        color.push("blue","yellow");
+        console.log(colorCopy);
+        console.log(color);
+        console.log(color);
+        let colorCopy=[...color,"blue","yellow"]
+        console.log(colorCopy);
+
+
+        // spread opearator is totally different than rest parameter
+        // spread opeartor used to copy entire the array using only three (...var_name) and the new array created by using is totally different means it creats a shallow copy of old array
+        // creates a new array
+        //copyting an array using spread operator
+        let color=["red","green"]
+        //console.log(color)
+        let arr1=[10,20,30,40]
+        let arr2=[50,60,70]
+        let arr3=[80,90,100,110]
+        let arr4=[120,130,140,150]
+
+        let WrapArray=[...arr1,...arr2,...arr3,...arr4,"n"]
+
+        let str=['a',...'bcd','e']
+    </script>,,
+
+
+    
+</body>
+</html>,,

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid columns</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #nav {
+            background-color: rgb(211, 185, 153);
+            height: 50px;
+            border: 1px solid;
+            text-align: center;
+            float: right;
+            position: static;
+        }
+
+        #nav #items #a{
+            display: grid;
+            align-items:center;
+            grid-template-columns: 20% 50%;
+            margin-top: auto;
+            margin-right: 2px;
+            margin-top: 2px;
+            /* height:auto; */
+            background-color: aqua;
+            width: auto;
+            border: 1px solid ;
+            float: right;
+        }
+        #nav #items #b{
+            display: grid;
+            margin-top: auto;
+            margin-right: 2px;
+            margin-top: 2px;
+            /* height:auto; */
+            background-color: aqua;
+            width: auto;
+            border: 1px solid ;
+            float: right;
+            align-items:center;
+            grid-template-columns: 20% 50%;
+        }
+        #nav #items #c{
+            display: grid;
+            align-items:center;
+            grid-template-columns: 20% 50%;
+            /* margin-top: auto; */
+            margin-right: 2px;
+            margin-top: 2px;
+            /* height:auto; */
+            background-color: aqua;
+            width: auto;
+            border: 1px solid ;
+            float: right;
+        }
+        .parent {
+            height:250px;
+            width: 100%;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: 100% 5% 4% 2%;
+            /* grid-template-columns: 100% 20% 20% 20%; */
+            grid-gap: 1em;
+            border: 2px solid;
+            gap: 10px;
+        }
+ 
+        /* .gap-data{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            grid-template-columns: 2fr 2fr;
+            display: grid;
+            grid-gap: 50%;
+
+        } */
+        footer{
+            height:60px;
+            background-color:red;
+            display: grid;
+            grid-template-columns: 100% 50%;
+            grid-auto-rows: minmax(100px auto);
+            border:2px solid;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.parent#block1*8  -->
+    <div class="parent">
+        <div id="nav">
+           <div id="items">
+            <div id="a">
+                exit
+            </div>
+            <div id="b">
+                contact
+            </div>
+            <div id="c">
+                home
+            </div>
+           </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

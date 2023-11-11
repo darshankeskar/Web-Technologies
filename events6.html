@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1" oncopy="getCopy()" oncut="getCut()" onpaste="getPaste()">
+    <input type="submit" id="inp2" onsubmit="onSubmit()">
+    <script>
+        let ele=document.getElementByid("inp1").value;
+        let ele1=document.getElementByid("inp2").value;
+        function getCopy(){
+            alert("YOUR TEXT IS SUCCESSFULLY COPIED !!!")
+        }
+        function getCut(){
+            alert("YOUR TEXT IS SUCCESSFULLY Cut pasted !!!")
+        }
+        function getPaste(){
+            alert("YOUR TEXT IS SUCCESSFULLY Pasted. !!!")
+        }
+        function onSubmit(){
+            alert("YOUR TEXT IS SUCCESSFULLY submitted. !!!")
+        }
+
+    </script>
+</body>
+</html>

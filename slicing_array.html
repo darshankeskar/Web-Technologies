@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slicing in array</title>
+</head>
+<body>
+    <!-- slice (start index,last index) = to get specified endex value -->
+    <!-- splice(start,index,del,ele1,new elenn..) -->
+    <!-- splice (index,no of elements to remove ) to remove specified index and elements from that index-->
+    <script>
+        <!-- slice(start ,index,last index) : it is used to turn array into mew fragment. -->
+        let arraySlice=[0,1,2,3,4,5,6,7]
+        console.log(arraySlice);
+        console.log(arraySlice.slice(1,5));
+
+        // splice(start,index,del,ele1,new elenn..) It is used to delete 
+        // an element form existing array and replace them by using new element,
+        let arraySplice=[10,20,30,40]
+        console.log(arraySplice);
+        console,log(arraySplice.splice(1,3,2000,3000,4000));
+        console.log(arraySplice);
+
+    </script>
+    
+</body>
+</html>
